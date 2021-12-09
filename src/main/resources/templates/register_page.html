@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL CHAIN</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/sign_up.css">
+    </head>
+
+
+
+    
+    <body>
+        <form class="box" action="/register" method="POST" th:object="${registerRequest}">
+                <h1>SIGN UP</h1>
+                
+                <input type = "text" name = "" placeholder="First Name" id = "fname">
+                <input type = "text" name = "" placeholder="Second Name" id = "sname">
+                <input type = "text" name = "username" placeholder="Enter Username" id = "username">
+                <input type = "text" name = "" placeholder="Enter phone number" id = "phone">
+
+
+                <input type = "email" placeholder="Enter Email" id = "email" name="">
+                <input type = "password" name = "" placeholder="Enter Password" id = "password">
+                <input type = "password" name = "password" placeholder="Enter Password Again" id = "re-password">
+
+                <input type = "text" name = "" placeholder="CountryCode" id = "CountryCode">
+                <input type = "text" name = "" placeholder="City" id = "City">
+                <input type = "text" name = "" placeholder="Street" id = "Street">
+
+                <input type = "submit" name = "" value = "Sign Up">
+
+
+        </form>
+    </body>
+</html>
